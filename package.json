@@ -1,0 +1,15 @@
+{
+  "name": "stick-it-too-cricut",
+  "version": "6.1.0",
+  "private": true,
+  "description": "Single-file Cricut design editor: SVG export, system/uploaded fonts, text-to-cut-paths, read-only device discovery and a simulator",
+  "scripts": {
+    "build": "python3 tools/patch_core.py && node tools/build.js",
+    "test:unit": "node --test tests/unit.test.js tests/textpaths.unit.test.js",
+    "test:browser": "node --test tests/browser.test.js tests/fonts.browser.test.js tests/undo.browser.test.js tests/mat.browser.test.js",
+    "test": "node --test tests/unit.test.js tests/textpaths.unit.test.js tests/browser.test.js tests/fonts.browser.test.js tests/undo.browser.test.js tests/mat.browser.test.js"
+  },
+  "devDependencies": {
+    "playwright": "1.56.0"
+  }
+}
