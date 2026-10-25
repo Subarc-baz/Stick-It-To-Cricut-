@@ -2,6 +2,10 @@
 
 A single-file, in-browser cutting-design editor (your v4 app) with fixed canvas interaction, real multi-select / grouping / resizing, and a hardware layer for the **Cricut Maker 3 over USB**.
 
+See whats new below. 
+
+To shorcut it, just open Index.html in browser and then drag it to your bookmarks. (be aware that moving the location of the index.html file may break this bookmark, so make sure the folder containing index.html is where you want it to be before you make the bookmark)
+
 > ## Read this first: what v6 can and cannot do
 > **v6 cannot cut on a real Maker 3.** No public, verified protocol for sending cut jobs to a stock Maker 3 exists (see `docs/RESEARCH.md`), and this app will not send guessed data to a machine.
 > What it **does** do with real hardware: let you pick a USB/serial device in the browser and **read its descriptors** (vendor/product ID, interfaces, endpoints). It claims no interface and writes nothing.
